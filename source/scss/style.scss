@@ -1,0 +1,60 @@
+@import "nullstyle";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Noto+Sans:wdth,wght@62.5..100,100..900&family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap');
+$inter: "Inter";
+$sans: "Noto Sans";
+$poppins: "Poppins";
+$roboto: "Roboto";
+
+html, body {
+    font-family: $inter;
+    color: #282727;
+}
+p {margin: 0;}
+.content {
+    max-width: 1296px;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.h1 {
+    color: var(--CoolGray-90, #21272A);
+    font-family: $poppins;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 110%;
+    margin: 0;
+    @media screen and (max-width: 470px) {
+        font-size: 32px;
+        letter-spacing: -0.48px;
+    }
+}
+.h3 {
+    color: var(--color-grey-black, #000);
+    font-family: $poppins;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+.pink {color: #D50057 !important;}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.slick {
+    &-track {display: flex;}
+}
+
+
+@import "main";
+@import "info"; 
+@import "night";
+@import "why";
+@import "also";
+@import "clenching-reduction";
+@import "feedback";
+@import "comments";
+

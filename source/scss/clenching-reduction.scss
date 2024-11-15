@@ -1,0 +1,61 @@
+.clenching-reduction {
+    max-width: 717px;
+    display: flex;
+    gap: 54px;
+    padding: 34px 73px 0 0;
+    margin: 0 auto 152px;
+    border-radius: 8px 8px 8px 0px;
+    background: #DACCF8;
+    @media screen and (max-width: 698px) {
+        flex-direction: column-reverse;
+        padding: 12px 7.5px 0;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+    &__img {
+        @media screen and (max-width: 698px) {display: none;}
+        &-mob {
+            display: none;
+            width: 100%;
+            max-width: 328px;
+            @media screen and (max-width: 698px) {display: block;}
+        }
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        @media screen and (max-width: 698px) {gap: 20px;}
+    }
+    &__title {
+        margin: 0;
+        color: #40D;
+        font-family: $poppins;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: -1.5px;
+        @media screen and (max-width: 698px) {
+            text-align: center;
+            font-size: 40px;
+            line-height: 95%;
+            letter-spacing: -1.2px;
+            padding: 0 18px;
+        }
+    }
+    &__tip {
+        color: var(--color-grey-grey-800, #1F1F1F);
+        font-family: $sans;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -1px;
+        margin: 0;
+        @media screen and (max-width: 698px) {
+            text-align: center;
+            line-height: 129%;
+            padding: 0 21.5px;
+        }
+    }
+}
